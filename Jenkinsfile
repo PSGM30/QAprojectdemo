@@ -33,24 +33,24 @@ pipeline
             		}
      		}
 	}
-  	post 
+post 
+	{
+	success 
 		{
-        	success 
-			{
-          			echo 'Build Successfull!!'
-          		}
-		failure 
-			{
-				echo 'Sorry mate! build is Failed :('
-		  	}
-		unstable 
-			{
-		    		echo 'Run was marked as unstable'
-		  	}
-		changed 
-			{
-		    		echo 'Hey look at this, Pipeline state is changed.'
-          		}
-      		}
+			echo 'Build Successfull!!'
+		}
+	failure 
+		{
+			echo 'Sorry mate! build is Failed :('
+		}
+	unstable 
+		{
+			echo 'Run was marked as unstable'
+		}
+	changed 
+		{
+			echo 'Hey look at this, Pipeline state is changed.'
+		}
 	}
+}
 
