@@ -32,6 +32,7 @@ pipeline
                 		input "Does the staging environment look ok?"
             		}
      		}
+	}
   	post 
 		{
         	success 
@@ -52,4 +53,4 @@ pipeline
           		}
       		}
 	}
-}
+
